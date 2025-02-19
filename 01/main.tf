@@ -32,3 +32,8 @@ resource "aws_instance" "app_server" {
     Name = "${local.tag_name}"
   }
 }
+
+
+output "instance_ip_addr" {
+  value = aws_instance.app_server.private_ip
+}
