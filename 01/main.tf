@@ -11,9 +11,18 @@ provider "aws" {
   region = "us-east-1"
 }
 
+variable "instance_type" {
+  type = string
+}
+
+variable "ami" {
+  type = string
+  
+}
+
 resource "aws_instance" "app_server" {
-  ami           = "ami-053a45fff0a704a47"
-  instance_type = "t3.nano"
+  ami           = var.ami 
+  instance_type = var.instance_type
 
   tags = {
     Name = "Test01"
