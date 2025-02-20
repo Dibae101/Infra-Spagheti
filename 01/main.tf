@@ -9,6 +9,7 @@ terraform {
 
 
 terraform { 
+  /*
   backend  "remote" {
     hostname = "app.terraform.io"
     organization = "darshan-org"
@@ -16,4 +17,5 @@ terraform {
       name = "terraform-wspc"  
     } 
   }
+  */
 }
