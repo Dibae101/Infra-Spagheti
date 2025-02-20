@@ -8,12 +8,14 @@ terraform {
 }
 
 
+
 terraform { 
+  /*
   backend  "remote" {
     hostname = "app.terraform.io"
     organization = "darshan-org"
     workspaces { 
       name = "terraform-wspc"  
     } 
-  }
+  } */
 }
