@@ -7,8 +7,7 @@ terraform {
   }
 }
 
-
-
+# commented to demo local-exec
 terraform { 
   /*
   backend  "remote" {
