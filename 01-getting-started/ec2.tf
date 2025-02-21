@@ -7,6 +7,7 @@ resource "aws_instance" "app_server" {
   instance_type = var.instance_type
   
   tags = {
+    
     Name = "${local.tag_name}"
   }
 }
